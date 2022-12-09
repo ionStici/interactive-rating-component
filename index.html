@@ -5,34 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Interactive rating component | Frontend Mentor</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
-  <!-- Rating state start -->
 
-  How did we do?
+    <main class="main">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
 
-  1 2 3 4 5
+        <section class="card">
+            <div class="card__icon-wrapper">
+                <div class="card__icon-star"></div>
+            </div>
 
-  Submit
+            <h1 class="heading-1">How did we do?</h1>
+            <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-  <!-- Rating state end -->
+            <ul class="card__numbers">
+                <li class="card__num">1</li>
+                <li class="card__num">2</li>
+                <li class="card__num">3</li>
+                <li class="card__num">4</li>
+                <li class="card__num">5</li>
+            </ul>
 
-  <!-- Thank you state start -->
+            <button class="btn">Submit</button>
+        </section>
 
-  You selected <!-- Add rating here --> out of 5
 
-  Thank you!
+        <section class="card-submitted">
+            <img class="card-submitted__img" src="./images/illustration-thank-you.svg" alt="A phone">
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+            <p class="card-submitted__message">You selected <span class="rating">3</span> out of 5</p>
 
-  <!-- Thank you state end -->
+            <h1 class="heading-1">Thank you!</h1>
+            <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don&rsquo;t hesitate to get in touch!</p>
+        </section>
+
+        
+        <p class="message">You have not selected a rating</p>
+
+
+    </main>   
+
 
 </body>
 </html>
