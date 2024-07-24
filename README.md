@@ -1,43 +1,26 @@
-# **Interactive rating component solution**
+# **Interactive Rating Component**
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## **Table of Content**
+- Explore the [Live Demo](https://ionstici.github.io/interactive-rating-component)
+- Published on [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-EnkotiS3jo)
 
-- [Screenshot](#screenshot)
-- [Links](#links)
-- [Built with](#built-with)
-- [Author](#author)
+In this project, users can select a rating from 1 to 5 and submit their feedback. Upon submission, the component employs a smooth slider effect to transition the content, displaying a confirmation box with the selected rating. This interaction aims to provide a user-friendly experience, keeping the interface clean and responsive.
 
-## **Screenshot**
+## Key Features
 
-![](./images/screenshot.png)
+- **Interactive Rating Selection:** Users can easily choose a rating by clicking on one of the five options.
+- **Dynamic Content Transition:** After submitting the rating, the card content slides out, and a new message with the selected rating slides in, creating a sleek and engaging user experience.
+- **Responsive Design:** The component is designed to be fully responsive, ensuring it looks great on all devices.
 
-## **Links**
+## Technologies Used
 
-- [Solution URL](https://github.com/ionStici/interactive-rating-component)
-- [Live Site URL](https://ionstici.github.io/interactive-rating-component)
+- **HTML:** For the basic structure of the component.
+- **CSS:** To style the component and implement the sliding animations.
+- **JavaScript:** To handle the user interactions, such as rating selection and content transitions.
 
-## **Built with**
+## Project Experience
 
-- Semantic HTML5 markup
-- CSS custom properties
-- CSS3 and JavaScript
-- Flexbox and Media Queries
+This project was a fantastic opportunity to dive deeper into creating interactive web components without relying on external libraries.
 
-## **Author**
-
-- GitHub - [@ionStici](https://github.com/ionStici)
-- Frontend Mentor - [@ionStici](https://www.frontendmentor.io/profile/ionStici)
-- Twitter - [@IonStici3](https://twitter.com/IonStici3)
-
-<!-- ## **Styles**
-
-- Orange: hsl(25, 97%, 53%)
-- White: hsl(0, 0%, 100%)
-- Light Grey: hsl(217, 12%, 63%)
-- Medium Grey: hsl(216, 12%, 54%)
-- Dark Blue: hsl(213, 19%, 18%)
-- Very Dark Blue: hsl(216, 12%, 8%)
-- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
-- Weights: 400, 700 -->
+Feel free to explore the code and try out the component yourself! Any feedback is greatly appreciated as I continue to improve my skills and projects.

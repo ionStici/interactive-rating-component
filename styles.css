@@ -1,0 +1,261 @@
+:root {
+  --color-orange: #f86c28;
+  --color-white: #fff;
+  --color-active: #7c8797;
+  --color-btn: #262e38;
+  --color-bg: #131518;
+  --color-card-bg: #191f28;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+button {
+  font-family: inherit;
+}
+
+main {
+  min-height: 100dvh;
+  padding: 4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #969fad;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  border: none;
+  border-radius: 50rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, transform 0.25s, outline 0.1s;
+}
+
+.btn:focus {
+  outline-offset: 0.3rem;
+  outline: solid 0.2rem var(--color-orange);
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+  outline: none;
+}
+
+.card {
+  max-width: 37.5rem;
+  width: 100%;
+  height: 36rem;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(to bottom, #232a34, #181e27);
+  overflow: hidden;
+  position: relative;
+}
+
+.card__rating,
+.card__feedback {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: 0 2.4rem;
+  transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.move-rating-card {
+  transform: translate(-50rem, -50%);
+}
+
+.card__rating__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  background-color: var(--color-btn);
+  margin-bottom: 1.6rem;
+}
+
+.card__rating__numbers {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 2.4rem;
+}
+
+.card__rating__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: var(--color-btn);
+  color: var(--color-active);
+  cursor: pointer;
+  transition: color 0.25s, background-color 0.25s;
+}
+
+.card__rating__btn:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.card__rating__btn:focus {
+  outline: solid 0.2rem var(--color-orange);
+}
+
+.card__rating__btn--active {
+  color: var(--color-white);
+  background-color: var(--color-active);
+  outline: none !important;
+}
+
+.card__feedback {
+  text-align: center;
+  transform: translate(50rem, -50%);
+}
+
+.move-feedback-card {
+  transform: translate(0, -50%);
+}
+
+.card__feedback__icon {
+  margin-bottom: 2.4rem;
+}
+
+.card__feedback__icon svg {
+  cursor: pointer;
+}
+
+.card__feedback__rating {
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 50rem;
+  padding: 0.8rem 1.4rem;
+  font-size: 1.4rem;
+  color: var(--color-orange);
+  background-color: var(--color-btn);
+  margin-bottom: 2.4rem;
+}
+
+.mb-16-07 {
+  margin-bottom: 1.6rem;
+}
+
+.mb-24 {
+  margin-bottom: 2.4rem;
+}
+
+.mb-10-15 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 45em) {
+  .card {
+    max-width: 41.2rem;
+    height: 41.6rem;
+    border-radius: 3rem;
+  }
+
+  .card__rating,
+  .card__feedback {
+    margin: 0 3.6rem;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .paragraph,
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .card__rating__icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .card__rating__numbers {
+    margin-bottom: 3.2rem;
+  }
+
+  .card__rating__btn {
+    font-size: 1.6rem;
+    width: 5.1rem;
+    height: 5.1rem;
+  }
+
+  .card__feedback__icon-icon {
+    margin-bottom: 3.2rem;
+  }
+
+  .card__feedback__rating {
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .mb-16-07 {
+    margin-bottom: 0.7rem;
+  }
+
+  .mb-10-15 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 95em) {
+  html {
+    font-size: 80%;
+  }
+}
